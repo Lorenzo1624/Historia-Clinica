@@ -12,8 +12,8 @@ public class patient {
     private double weight;
     private double height;
     private String address;
-    private List<Photos> medicalImages;
-    private List<Diseases> diseases;
+    private List<medicalImages> medicalImages;
+    private List<diseases> diseases;
     
     
     public patient (String name, String CI, Date birth_date, boolean sex, float weight, float height, String address, ArrayList medicalImages, ArrayList diseases){
