@@ -1,0 +1,75 @@
+@staruml
+
+patient "1"o->0...*"Photo: los que tienen
+patient "1"o->1...*"Diseases: sufre
+
+class patient{
+    -Name: string
+    -CI: string
+    -Brith: date
+    -Sex: boolean
+    -Weigth: double
+    -Heigth: double
+    -Address: string
+    -MedicalImages: Lista<Photo>
+    -Diseases: Lista<Diseases>
+
+    + patient()
+    +patient(Name: string, CI: string, Sex: boolean, Brith: date, Wigth:double, Heigth: double, Address: string, Diseases: List<Diseases>, MedicalImages: List<Photo>)
+    +getName(): string
+    +setName(Name: string): void
+    +getCI(): string
+    +setCI(CI: string):void
+    +getSex():boolean
+    +setSex(Sex:boolean):void
+    +getBirth():datee
+    +setBirth(Brith:date):void
+    +getWeigth():double
+    +setWeigth(Weigth:double):void
+    +getHeigth():double
+    +setHeigth(Heigth:double):void
+    +getAddress():string
+    +setAddress(Address:string):void
+    +getDiseases(): List<Diseases>
+    +setDiseases(Diseases:List<Diseases>):void
+    +getMedicalImages():List<Photo>
+    +setMedicalImages(MedicalImages: List<Photo>):void
+
+}
+
+class Photo{
+    -P_name: string
+    -P_date: date
+    -P_type: string
+    -Doctor_opinion: string
+
+    +MedicalImages()
+    +MedicalImages(P_name: string, P_date: date, P_type: string, Doctor_opinion: string)
+    +getP_name():string
+    +setP_name(P_name:string):void
+    +getP_date():date
+    +setP_date(P_date:date):void
+    +getP_type():string
+    +setP_type(P_type:string):void
+    +getDoctor_opinion():string
+    +setDoctor_opinion(Doctor_opinion:string):void
+}
+
+class Diseases{
+    -D_name: string
+    -D_date:date
+    -D_treatmet:string
+
+    +Diseases()
+    +Diseases(D_name:string,D_date:date, D_treatmet:string)
+    +getD_name():string
+    +setD_name(D_name::string):void
+    +getD_date():date
+    +setD_date(D_date:date):void
+    +getD_treatment():string
+    +setD_treatment(D_treatmet:string):void
+
+
+
+}
+@enduml
